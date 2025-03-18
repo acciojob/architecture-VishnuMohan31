@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Page</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+		/* Styling for the main container */
+		.container {
+		    width: 1100px;
+		    margin: 0 auto;
+		    font-family: Arial, sans-serif;
+		    text-align: center;
+		}
+		
+		/* Styling for the heading */
+		h1 {
+		    color: #333;
+		    margin-bottom: 20px;
+		}
+		
+		/* Styling for the image container */
+		.imageContainer {
+		    text-align: center;
+		    margin-bottom: 20px;
+		}
+		
+		.imageContainer img {
+		    max-width: 100%;
+		    height: auto;
+		    border-radius: 10px;
+		}
+		
+		/* Styling for the table */
+		table {
+		    width: 100%;
+		    border-collapse: collapse;
+		    margin-top: 20px;
+		}
+		
+		td {
+		    text-align: center;
+		    padding: 10px;
+		    border: 1px solid #ddd;
+		    vertical-align: middle;
+		}
+		
+		/* Column-specific widths */
+		td:first-child, td:last-child {
+		    width: 200px;
+		}
+		
+		td:nth-child(2) {
+		    width: 600px;
+		}
+		
+		/* Styling for images in the table */
+		table img {
+		    max-width: 100%;
+		    height: auto;
+		    border-radius: 5px;
+		}
+
+	</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <h1>Architecture Around the World</h1>
+        
+        <!-- Image container -->
+        <div class="imageContainer">
+            <img src="architecture_main.jpg" alt="Main Architecture" />
+        </div>
 
+        <!-- Table containing images and text -->
+        <table>
+            <tr>
+                <td><img src="arch1.jpg" alt="Architecture 1"></td>
+                <td>A glimpse of the modern architecture in urban environments, designed to inspire creativity.</td>
+                <td><img src="arch2.jpg" alt="Architecture 2"></td>
+            </tr>
+            <tr>
+                <td><img src="arch3.jpg" alt="Architecture 3"></td>
+                <td>Classical and historical architecture reflecting cultural heritage and beauty.</td>
+                <td><img src="arch4.jpg" alt="Architecture 4"></td>
+            </tr>
+        </table>
+    </div>
 </body>
-
 </html>
